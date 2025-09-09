@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 200px;
+}
+
+header p {
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+nav #nav-wrapper {
+    height: 100%;
+}
+
+nav #nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #333;
+}
+
+main {
+    padding: 2rem;
+    margin-left: 200px;
+}
+
+/* Adding the active class to the Dashboard link */
+nav a.active {
+    background-color: #555;
+    color: yellow;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for styling the form */
+        body {
+            background-color: #f2f2f2; /* Set background color for the page */
+            font-family: Arial, sans-serif; /* Use a sans-serif font */
+        }
+        .container {
+            max-width: 500px; /* Set maximum width for the container */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px; /* Add some padding */
+            background-color: #fff; /* Set background color for the container */
+            border-radius: 8px; /* Add border radius */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+            position: relative; /* Make the container position relative */
+        }
+        h1 {
+            text-align: center; /* Center align the heading */
+            color: #333; /* Set text color */
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="datetime-local"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 100%; /* Set width to 100% */
+            padding: 10px; /* Add padding */
+            margin: 5px 0; /* Add margin */
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 4px; /* Add border radius */
+            box-sizing: border-box; /* Ensure padding and border are included in the width */
+            font-size: 16px; /* Set font size */
+        }
+        input[type="submit"] {
+            font-weight: bold; /* Make the text bold */
+            background-color: #4CAF50; /* Set background color */
+            color: #fff; /* Set text color to white */
+            border: none; /* Remove border */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darken background color on hover */
+        }
+        input[type="number"]:focus {
+            border: 2px solid #4CAF50; /* Change border color on focus */
+            outline: none; /* Remove outline */
+        }
+
+        /* CSS for the See List button */
+        .see-list-button {
+            background-color: #008CBA; /* Change to desired color */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px; /* Adjust font size if necessary */
+            border-radius: 3px;
+            padding: 10px 20px; /* Adjust padding if necessary */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .see-list-button:hover {
+            background-color: #005f79; /* Change to desired hover color */
+        }
+
+        /* Adjust the size of the search button */
+        #search_button {
+            padding: 8px 12px; /* Adjust padding for smaller size */
+            font-size: 14px; /* Adjust font size for smaller size */
+        }
+
+        /* Adjust spacing for the reservation form */
+        .reservation-form {
+            margin-top: 20px; /* Add space below the form */
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Reservation System</h1>
+    <div class="container">
+        <form class="reservation-form" id="reservation_form" action="updatedelete.php" method="get">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="datetime-local" name="datetime" required>
+            <input type="number" name="guests" placeholder="Number of Guests" required>
+            <input type="submit" name="submit" value="Reserve">
+        </form>
+        <!-- See List button -->
+        <a class="see-list-button" href="updatedelete.php">See List</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+CREATE DATABASE RMS_database;
+
+CREATE TABLE categories (
+    categorie_id INT AUTO_INCREMENT PRIMARY KEY,
+    categorie_name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    categorie_id INT,
+    product_name VARCHAR(255) NOT NULL,
+    product_picture VARCHAR(255),
+    product_price DECIMAL(10, 2),
+    available_status BOOLEAN,
+    product_description TEXT,
+    FOREIGN KEY (categorie_id) REFERENCES categories(categorie_id)
+);
+
+I want "Category Management System" for "Restaurant Management System"
+
+For this project possible links are 
+index.php
+db_connection.php
+get_categories.php
+add_category.php
+edit_category.php
+delete_category.php
+style.css (if need)
+script.js (for more responsive)
+
+Now i tell what i want :
+
+first i want a "Add Category Icon" --> if i click the icon dropdown or popup
+form for add category where i can add categories.
+
+secound i want a "Search Categorie" beside the "Add Category Icon" --> where i can 
+Search Categories which already in database 
+
+third i want a table for show the added categories which are already in database 
+--> bellow the "Add Category Icon" and "Search Categorie" 
+
+fourth i want Edit and Delete options for each row --> beside each categories (N.B: edit and delete options show in Actions )
+if i click Delete option --> delete the specific category which beside the delete option
+if i click Edit option --> dropdown or popup form for edit category
+
+For comlplete this project use (php , html , css , mysql)

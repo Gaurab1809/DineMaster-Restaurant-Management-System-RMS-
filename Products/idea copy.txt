@@ -1,0 +1,104 @@
+CREATE TABLE categories (
+    category_id INT AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT,
+    product_name VARCHAR(255) NOT NULL,
+    product_picture VARCHAR(255),
+    product_price DECIMAL(10, 2),
+    available_status BOOLEAN,
+    product_description TEXT,
+    FOREIGN KEY (category_id) REFERENCES categories(category_id)
+);
+
+
+I want "Product Management System" for "Restaurant Management System"
+
+For this project possible links are 
+index.php
+db_connection.php
+get_categories.php
+get_products.php
+add_product.php
+edit_product.php
+delete_product.php
+style.css (if need)
+script.js (for more responsive)
+
+where i can add products by categories
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE categories (
+    category_id INT AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    category_id INT,
+    product_name VARCHAR(255) NOT NULL,
+    product_picture VARCHAR(255),
+    product_price DECIMAL(10, 2),
+    available_status BOOLEAN,
+    product_description TEXT,
+    FOREIGN KEY (category_id) REFERENCES categories(category_id)
+);
+
+INSERT INTO categories (category_name) VALUES
+('Appetizers'),
+('Salads'),
+('Soups'),
+('Pasta'),
+('Pizza'),
+('Burgers'),
+('Sandwiches'),
+('Seafood'),
+('Steaks'),
+('Chicken'),
+('Vegetarian'),
+('Desserts'),
+('Beverages');
+
+
+INSERT INTO products (category_id, product_name, product_picture, product_price, available_status, product_description) VALUES
+(1, 'Mozzarella Sticks', 'images/mozzarella_sticks.jpg', 8.99, 1, 'Deep-fried breaded mozzarella cheese sticks served with marinara sauce.'),
+(1, 'Chicken Wings', 'images/chicken_wings.jpg', 10.99, 1, 'Crispy chicken wings tossed in your choice of sauce (BBQ, Buffalo, or Garlic Parmesan).'),
+(2, 'Caesar Salad', 'images/caesar_salad.jpg', 9.49, 1, 'Fresh romaine lettuce, croutons, Parmesan cheese, and Caesar dressing.'),
+(2, 'Greek Salad', 'images/greek_salad.jpg', 10.99, 1, 'Mixed greens, tomatoes, cucumbers, red onions, Kalamata olives, and feta cheese with Greek dressing.'),
+(3, 'Tomato Soup', 'images/tomato_soup.jpg', 5.99, 1, 'Classic tomato soup served with croutons.'),
+(3, 'Chicken Noodle Soup', 'images/chicken_noodle_soup.jpg', 6.99, 1, 'Homemade chicken noodle soup with tender chicken and vegetables.'),
+(4, 'Spaghetti Bolognese', 'images/spaghetti_bolognese.jpg', 12.99, 1, 'Spaghetti pasta topped with rich meat sauce and grated Parmesan cheese.'),
+(4, 'Fettuccine Alfredo', 'images/fettuccine_alfredo.jpg', 14.99, 1, 'Fettuccine pasta tossed in creamy Alfredo sauce with grilled chicken.'),
+(5, 'Margherita Pizza', 'images/margherita_pizza.jpg', 11.99, 1, 'Classic pizza topped with tomato sauce, fresh mozzarella, basil, and olive oil.'),
+(5, 'Pepperoni Pizza', 'images/pepperoni_pizza.jpg', 13.99, 1, 'Pizza topped with tomato sauce, mozzarella cheese, and pepperoni slices.'),
+(6, 'Classic Cheeseburger', 'images/classic_cheeseburger.jpg', 9.99, 1, 'Beef patty topped with American cheese, lettuce, tomato, onion, and pickles on a toasted bun.'),
+(6, 'Bacon BBQ Burger', 'images/bacon_bbq_burger.jpg', 11.99, 1, 'Beef patty topped with crispy bacon, cheddar cheese, BBQ sauce, lettuce, and tomato on a brioche bun.'),
+(7, 'BLT Sandwich', 'images/blt_sandwich.jpg', 8.49, 1, 'Classic sandwich with crispy bacon, lettuce, tomato, and mayonnaise on toasted bread.'),
+(7, 'Turkey Club Sandwich', 'images/turkey_club_sandwich.jpg', 10.49, 1, 'Triple-decker sandwich with turkey breast, bacon, lettuce, tomato, and mayonnaise on toasted bread.'),
+(8, 'Grilled Salmon', 'images/grilled_salmon.jpg', 16.99, 1, 'Fresh Atlantic salmon fillet grilled to perfection and served with seasonal vegetables and lemon butter sauce.'),
+(8, 'Shrimp Scampi', 'images/shrimp_scampi.jpg', 18.99, 1, 'Shrimp sautéed in garlic, butter, and white wine sauce, served over linguine pasta.'),
+(9, 'Filet Mignon', 'images/filet_mignon.jpg', 24.99, 1, 'Tender filet mignon steak cooked to your liking, served with mashed potatoes and grilled asparagus.'),
+(9, 'Ribeye Steak', 'images/ribeye_steak.jpg', 22.99, 1, 'Juicy ribeye steak seasoned and grilled to perfection, served with roasted potatoes and mixed vegetables.'),
+(10, 'Grilled Chicken Breast', 'images/grilled_chicken_breast.jpg', 15.99, 1, 'Boneless chicken breast marinated in herbs and spices, grilled to juicy perfection, served with rice and steamed broccoli.'),
+(10, 'Chicken Parmesan', 'images/chicken_parmesan.jpg', 17.99, 1, 'Breaded chicken breast topped with marinara sauce and melted mozzarella cheese, served over spaghetti pasta.'),
+(11, 'Vegetable Stir Fry', 'images/vegetable_stir_fry.jpg', 12.99, 1, 'Assorted fresh vegetables stir-fried in a savory sauce, served over steamed rice.'),
+(11, 'Eggplant Parmesan', 'images/eggplant_parmesan.jpg', 13.99, 1, 'Sliced eggplant breaded and fried until golden, topped with marinara sauce and melted mozzarella cheese, served with spaghetti pasta.'),
+(12, 'New York Cheesecake', 'images/cheesecake.jpg', 7.99, 1, 'Creamy cheesecake on a graham cracker crust, topped with your choice of fruit compote.'),
+(12, 'Chocolate Lava Cake', 'images/chocolate_lava_cake.jpg', 8.99, 1, 'Warm chocolate cake with a gooey molten chocolate center, served with vanilla ice cream.'),
+(13, 'Iced Tea', 'images/iced_tea.jpg', 2.49, 1, 'Refreshing iced tea with lemon slices and mint leaves.'),
+(13, 'Coca-Cola', 'images/coca_cola.jpg', 1.99, 1, 'Classic Coca-Cola served ice-cold in a glass with ice cubes.');
+
+

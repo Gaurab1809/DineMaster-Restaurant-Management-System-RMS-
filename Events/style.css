@@ -1,0 +1,88 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(25, 0, 0, 0.229);
+    position: relative;
+}
+
+
+.event-form {
+    margin-top: 20px;
+    position: relative; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 18px; 
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    cursor: pointer;
+}
+
+.create-event-button {
+    background-color: #1071d9; 
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-event-button:hover {
+    background-color: #b300a1; 
+}
+
+.see-events-button {
+    background-color: #1ba575; 
+    color: #fff;
+    padding: 16px 16px; 
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 0px; 
+    right: 20px; 
+}
+
+.see-events-button:hover {
+    background-color: #700fd7; 
+}

@@ -1,0 +1,26 @@
+CREATE TABLE employees (
+    employee_id INT AUTO_INCREMENT PRIMARY KEY,
+    role_id INT NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    phone VARCHAR(20) NOT NULL UNIQUE,
+    address TEXT,
+    emergency_contact VARCHAR(100),
+    photo VARCHAR(255),
+    salary DECIMAL(10, 2),
+    hired_date DATE,
+    password VARCHAR(255) NOT NULL,
+    FOREIGN KEY (role_id) REFERENCES roles(role_id)
+);
+
+
+CREATE TABLE roles (
+    role_id INT AUTO_INCREMENT PRIMARY KEY,
+    role_name VARCHAR(50) NOT NULL
+);
+
+i want Add Role button in top of left side 
+if i click the button then pop up a form where i can add role_name
+
+using PHP, HTML, CSS, BOOTSTRAP, JS, AJAX
