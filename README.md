@@ -1,128 +1,90 @@
-# Restaurant Management System (RMS)
+<!-- Logo -->
+<p align="center">
+  <img src="RMS_Logo.png" alt="RMS Logo" width="400"/>
+</p>
 
-A web-based application built with **PHP**, **MySQL**, **HTML/CSS**, and **JavaScript** to manage restaurant operations including customers, reservations, staff, products, events, reviews, and dashboard management.
+<!-- Title Banner -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%8D%BB%20Restaurant%20Management%20System%20(RMS)&fontSize=36&width=1200&height=150&color=0:FFA500,100:FF4500"/>
+</p>
 
----
+<h3 align="center">
+  <b style="color:purple;">🍴 Simplifying Restaurant Operations</b>
+</h3>
 
-## Table of Contents
+<h3 align="center">
+  <b>💻 Web App for Customers & Admin Management</b>
+</h3>
 
-- [Features](#features)  
-- [Getting Started](#getting-started)  
-  - [Prerequisites](#prerequisites)  
-  - [Installation](#installation)  
-  - [Configuration](#configuration)  
-- [Usage](#usage)  
-- [Project Structure](#project-structure)  
-- [Database Schema](#database-schema)  
-- [Security & Authentication](#security--authentication)  
-- [Future Enhancements](#future-enhancements)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Author](#author)
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Web-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Language-PHP-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Database-MySQL-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+</p>
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-## Features
+<!-- Features Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%9A%80%20Features&fontSize=32&width=1200&height=130&color=0:00F260,100:0575E6" width="100%">
 
-- Admin & Customer login / registration; admin sessions for protected management pages  
-- Password recovery / reset functionality  
-- Customer profile management  
-- Dashboard for overview of system metrics (orders, reservations, events, etc.)  
-- CRUD operations for:  
-  - Products (menu items)  
-  - Reservations  
-  - Events & Booked Events  
-  - Staff management  
-  - Reviews & Ratings  
-  - Categories  
-- Responsive & styled front end (CSS for layout, registration/login styles)  
-- Session management to enforce user authorization  
+- 👥 Admin & Customer login / registration with session control  
+- 🔑 Password recovery & reset  
+- 📝 Customer profile management  
+- 📊 Dashboard overview (orders, reservations, events, reviews)  
+- 🍽️ CRUD for Products / Menu Items  
+- 📅 Reservation management  
+- 🎉 Events creation & booked events handling  
+- 🧑‍🍳 Staff management  
+- ⭐ Reviews & Ratings  
+- 🏷️ Category management  
+- 🌐 Responsive front end with CSS & JS  
+- 🔒 Session-based authorization  
 
----
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-## Getting Started
+<!-- Getting Started Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%9B%BA%20Getting%20Started&fontSize=32&width=1200&height=130&color=0:FF416C,100:FF4B2B" width="100%">
 
 ### Prerequisites
-
-Make sure you have the following installed:
-
-- Web server with PHP support (e.g. Apache or Nginx)  
-- PHP (version compatible with your codebase, e.g. PHP 7.x or 8.x)  
-- MySQL or MariaDB (database)  
-- A modern browser for testing  
+- 💻 Web server with PHP support (Apache, Nginx)  
+- 🐘 PHP 7.x / 8.x  
+- 🗄️ MySQL 
+- 🌐 Modern browser  
 
 ### Installation
+1. Clone the repo:
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Gaurab1809/Restaurant-Management-System-RMS-.git
-   cd Restaurant-Management-System-RMS-
-Copy the project folder into your server's web root directory (e.g. htdocs for XAMPP, www for WAMP, or appropriate directory for your setup).
-
-Create a new database in MySQL (e.g. restaurant_db).
-
-Configuration
-Import the SQL file (if provided) to set up tables:
-
-sql
-Copy code
+```bash
+git clone https://github.com/Gaurab1809/Restaurant-Management-System-RMS-.git
+cd Restaurant-Management-System-RMS-
+```
+2. Copy project folder into your server root (htdocs, www, etc.)
+3. Create a new database: restaurant_db
+4. Import tables:
+```bash
 mysql -u username -p restaurant_db < db_setup.sql
-If no SQL file is included, manually create necessary tables: users, reservations, products, events, categories, reviews, staff, etc.
-
-In the source code, locate the database configuration file—e.g.:
-
-php
-Copy code
-db_config.php
-Update connection parameters:
-
-php
-Copy code
+```
+5. Update database connection in db_config.php:
+```bash
 host: your_db_host
 username: your_db_user
 password: your_db_password
-database: name_of_your_database
-Ensure permissions:
-
-Set correct permissions on folders if needed (uploads, etc.)
-
-Make sure sessions work (session directory writable)
-
-(Optional) Adjust styling in CSS files: style.css, styles_reg_for.css, etc.
-
+database: restaurant_db
+```
+6. Ensure session folder is writable & CSS styling is intact (**style.css, styles_reg_for.css**)
 Usage
-Open browser and navigate to the application URL (e.g. http://localhost/RMS/).
+7. Open browser: **http://localhost/RMS/**
+8. Customer: **register/login, view menu/events, make reservations, submit reviews**
+9. Admin: **login, manage staff/products/categories/events/reservations/reviews, view dashboard metrics**
 
-As a customer:
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
 
-Register / Login
 
-View products / menu, events
+<!-- Project Structure Banner --> 
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%93%9A%20Project%20Structure&fontSize=32&width=1200&height=130&color=0:36BCF7,100:0f2027" width="100%">
 
-Make reservations
-
-Submit reviews
-
-As an admin:
-
-Login via admin_login.php
-
-Access dashboard to see key metrics
-
-Manage staff, products, categories, events, and reservations
-
-Handle booked events and reviews
-
-Edit / delete content as required
-
-Password recovery if you forget credentials via customer_forgot_password.php, then confirm with a token or required steps.
-
-Project Structure
-Here’s an overview of key files & directories:
-
-perl
-Copy code
+```bash
 Restaurant-Management-System-RMS-/
 ├── admin_login.php
 ├── admin_registration.php
@@ -136,82 +98,74 @@ Restaurant-Management-System-RMS-/
 ├── db_config.php
 ├── style.css
 ├── styles_reg_for.css
-├── products/            # CRUD pages or endpoints for products
-├── reservations/        # Pages for reservation functionality
-├── events/              # Events management (create, list, book)
-├── staff/               # Staff management
-├── reviews/             # Customer reviews & feedback
-├── categories/          # Product / event / menu categories
-└── Dashboard/           # Admin or customer dashboard pages
-Database Schema
-A suggested schema might include the following tables (you may have more or fewer):
+├── products/        # CRUD pages for products
+├── reservations/    # Reservation pages
+├── events/          # Event management
+├── staff/           # Staff management
+├── reviews/         # Customer reviews
+├── categories/      # Menu/event categories
+└── Dashboard/       # Dashboard pages
+```
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
 
-Table Name	Key Columns & Fields
-users	user_id, name, email, password_hash, role
-products	product_id, name, category_id, price, description, image
-categories	category_id, category_name
-reservations	reservation_id, user_id, product_id (if applicable), date, time
-events	event_id, event_name, date, location, details
-booked_events	booking_id, event_id, user_id, booking_date
-staff	staff_id, name, role, contact_info
-reviews	review_id, user_id, product_id/event_id, rating, comment, timestamp
 
-Security & Authentication
-Passwords should be securely hashed (e.g. using password_hash() in PHP)
+<!-- Database Banner --> 
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%97%84%20Database&fontSize=32&width=1200&height=130&color=0:00F260,100:0575E6" width="100%">
 
-Sessions to maintain login state; redirect unauthorized users away from admin pages
+<!-- Database Schema -->
+### 🗄️ Suggested Tables
 
-Input validation / sanitization to prevent SQL injection and XSS
+| Table          | Key Columns                                              |
+|----------------|----------------------------------------------------------|
+| `users`        | user_id, name, email, password_hash, role               |
+| `products`     | product_id, name, category_id, price, description, image |
+| `categories`   | category_id, category_name                               |
+| `reservations` | reservation_id, user_id, product_id, date, time        |
+| `events`       | event_id, event_name, date, location, details          |
+| `booked_events`| booking_id, event_id, user_id, booking_date            |
+| `staff`        | staff_id, name, role, contact_info                     |
+| `reviews`      | review_id, user_id, product_id/event_id, rating, comment, timestamp |
 
-Use HTTPS in production environments for secure data transport
 
-Future Enhancements
-Here are some ideas to improve the system further:
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
 
-Add image upload capability for products / events
 
-Role-based access (admin, manager, customer) with more fine-grained permissions
 
-Email notifications (reservation confirmations, password reset links)
+<!-- Security Banner --> 
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%94%92%20Security%20%26%20Authentication&fontSize=32&width=1200&height=130&color=0:FF416C,100:FF4B2B" width="100%">
 
-Cart / order processing functionality
+🔐 Passwords hashed with password_hash()
+🛡️ Session-based login control
+⚠️ Input validation & sanitization (prevent SQLi/XSS)
+🔒 HTTPS recommended for production
 
-Analytics & reporting (sales, reservation trends)
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
 
-Mobile responsive design or a dedicated mobile frontend
 
-Use a framework (Laravel, Symfony, etc.) or MVC structure to better organize code
+<!-- Future Enhancements Banner --> 
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%94%AE%20Future%20Enhancements&fontSize=32&width=1200&height=130&color=0:00F260,100:0575E6" width="100%">
 
-Contributing
-Contributions are welcomed! If you wish to contribute:
+📸 Image uploads for products/events
+👥 Role-based access control (admin, manager, customer)
+✉️ Email notifications (reservations, password resets)
+🛒 Cart / Order processing
+📊 Analytics & reporting
+📱 Mobile responsive design / dedicated frontend
+🏗️ MVC framework (Laravel/Symfony) for better structure
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
 
-Fork the repository
+<!-- Author Banner --> 
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB%20Author&fontSize=32&width=1200&height=130&color=0:6A82FB,100:FC5C7D" width="100%">
 
-Create a new branch, e.g. feature/<your-feature>
+### A. K. M. Masudur Rahman (Gaurab)  
+🎓 Department of Computer Science and Engineering (CSE)   
+🏫 Bangladesh Army University of Science and Technology (BAUST), Saidpur   
+📧 Email: your.email@example.com   
 
-Make your changes, ensuring code is clean and well tested
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
 
-Submit a pull request with a descriptive title and description
 
-Please follow best practices: clear commit messages, consistent code style, and include any necessary documentation or instructions for your change.
+<!-- Support Banner --> 
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%E2%AD%90%20Support&fontSize=32&width=1200&height=130&color=0:FF416C,100:FF4B2B" width="100%">
 
-License
-This project is licensed under the MIT License – feel free to use, modify, and distribute with attribution.
-(Add a LICENSE file in the repo with full license text.)
-
-Author
-Gaurab1809
-
-GitHub: Gaurab1809
-
-(Optional) Email: your.email@example.com
-
-Thank you for using / exploring Restaurant Management System (RMS)!
-
-yaml
-Copy code
-
----
-
-If you want, I can generate a version of this README that includes badges (license, contributors, technologies) or include sample screenshots to improve presentation. Do you prefer that?
-::contentReference[oaicite:0]{index=0}
+If you like this project, consider giving it a ⭐ on GitHub!
