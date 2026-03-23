@@ -1,15 +1,15 @@
 <!-- Logo -->
 <p align="center">
-  <img src="RMS_Logo.png" alt="RMS Logo" width="400"/>
+  <img src="DineMaster_Logo.png" alt="DineMaster Logo" width="400"/>
 </p>
 
 <!-- Title Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%8D%BB%20Restaurant%20Management%20System%20(RMS)&fontSize=36&width=1200&height=150&color=0:FFA500,100:FF4500"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%8D%BB%20DineMaster%20-%20Restaurant%20Management%20System&fontSize=36&width=1200&height=150&color=0:FFA500,100:FF4500"/>
 </p>
 
 <h3 align="center">
-  <b style="color:purple;">🍴 Simplifying Restaurant Operations</b>
+  <b style="color:purple;">🍴 Master Your Restaurant Operations</b>
 </h3>
 
 <h3 align="center">
@@ -26,29 +26,30 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 <!-- Overview / Abstract Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%93%9D%20Restaurant%20Management%20System%20Overview%20%F0%9F%8D%BC&fontSize=32&width=1200&height=130&color=0:36BCF7,100:0f2027" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%93%9D%20DineMaster%20Overview%20%F0%9F%8D%BC&fontSize=32&width=1200&height=130&color=0:36BCF7,100:0f2027" width="100%">
 
-**Restaurant Management System (RMS)** is a web-based application designed to streamline restaurant operations for both customers and administrators.  
-It provides functionalities for product/menu management, reservations, event handling, staff management, reviews, and dashboard analytics.  
+**DineMaster – Restaurant Management System** is a professional web-based platform designed to **streamline restaurant operations** for both customers and administrators.  
+It supports menu/product management, reservations, event handling, staff management, customer reviews, and dashboard analytics.  
 
-The system enhances efficiency, improves customer experience, and centralizes restaurant operations in a secure, user-friendly platform.  
-**Keywords:** Restaurant Management, Web Application, PHP, MySQL, Admin Dashboard, Reservations, CRUD Operations, Event Management.
+The system centralizes restaurant operations, enhances efficiency, and ensures a **secure and user-friendly experience**.  
+
+**Keywords:** Restaurant Management, Web Application, PHP, MySQL, Admin Dashboard, Reservations, CRUD Operations, Event Management, Staff Management.  
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 
 <!-- Introduction Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%8D%BC%20Restaurant%20Management%20System%20Introduction%20%F0%9F%9A%80&fontSize=32&width=1200&height=130&color=0:FF416C,100:FF4B2B" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%8D%BC%20DineMaster%20Introduction%20%F0%9F%9A%80&fontSize=32&width=1200&height=130&color=0:FF416C,100:FF4B2B" width="100%">
 
-Modern restaurants often face challenges in managing orders, reservations, events, staff, and reviews efficiently.  
-**RMS** solves these problems by providing a unified platform:  
+Modern restaurants face challenges in managing orders, reservations, events, staff, and reviews efficiently.  
+**DineMaster** addresses these by providing a **unified platform**:  
 
 - Customers can **browse menu items, make reservations, and submit reviews**.  
 - Administrators can **manage products, staff, events, bookings, and monitor metrics** through a secure dashboard.  
 
-Built with **PHP, MySQL, HTML/CSS, and JavaScript**, RMS ensures a responsive, interactive, and secure experience while centralizing restaurant management for operational efficiency.
+Built with **PHP, MySQL, HTML/CSS, and JavaScript**, DineMaster ensures a responsive, interactive, and secure experience while centralizing restaurant management for operational efficiency.  
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">  
 
 <!-- Features Banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%9A%80%20Features&fontSize=32&width=1200&height=130&color=0:00F260,100:0575E6" width="100%">
@@ -66,7 +67,7 @@ Built with **PHP, MySQL, HTML/CSS, and JavaScript**, RMS ensures a responsive, i
 - 🌐 Responsive front end with CSS & JS  
 - 🔒 Session-based authorization  
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">  
 
 <!-- Getting Started Banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%9B%BA%20Getting%20Started&fontSize=32&width=1200&height=130&color=0:FF416C,100:FF4B2B" width="100%">
@@ -110,7 +111,7 @@ Usage
 <img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%93%9A%20Project%20Structure&fontSize=32&width=1200&height=130&color=0:36BCF7,100:0f2027" width="100%">
 
 ```bash
-Restaurant-Management-System-RMS-/
+DineMaster/
 ├── admin_login.php
 ├── admin_registration.php
 ├── customer_register.php
@@ -155,14 +156,14 @@ Restaurant-Management-System-RMS-/
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
 
 
+<!-- Security Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&text=Security%20and%20Authentication&fontSize=32&width=1200&height=130&color=0:FF416C,100:FF4B2B" width="100%">
 
-<!-- Security Banner --> 
-<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%94%92%20Security%20%26%20Authentication&fontSize=32&width=1200&height=130&color=0:FF416C,100:FF4B2B" width="100%">
 
-🔐 Passwords hashed with password_hash()
-🛡️ Session-based login control
-⚠️ Input validation & sanitization (prevent SQLi/XSS)
-🔒 HTTPS recommended for production
+🔐 Passwords hashed with password_hash()   
+🛡️ Session-based login control   
+⚠️ Input validation & sanitization (prevent SQLi/XSS)   
+🔒 HTTPS recommended for production   
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
 
