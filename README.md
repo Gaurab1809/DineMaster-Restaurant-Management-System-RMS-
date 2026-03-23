@@ -25,6 +25,31 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
+<!-- Overview / Abstract Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%93%9D%20Restaurant%20Management%20System%20Overview%20%F0%9F%8D%BC&fontSize=32&width=1200&height=130&color=0:36BCF7,100:0f2027" width="100%">
+
+**Restaurant Management System (RMS)** is a web-based application designed to streamline restaurant operations for both customers and administrators.  
+It provides functionalities for product/menu management, reservations, event handling, staff management, reviews, and dashboard analytics.  
+
+The system enhances efficiency, improves customer experience, and centralizes restaurant operations in a secure, user-friendly platform.  
+**Keywords:** Restaurant Management, Web Application, PHP, MySQL, Admin Dashboard, Reservations, CRUD Operations, Event Management.
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+
+<!-- Introduction Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%8D%BC%20Restaurant%20Management%20System%20Introduction%20%F0%9F%9A%80&fontSize=32&width=1200&height=130&color=0:FF416C,100:FF4B2B" width="100%">
+
+Modern restaurants often face challenges in managing orders, reservations, events, staff, and reviews efficiently.  
+**RMS** solves these problems by providing a unified platform:  
+
+- Customers can **browse menu items, make reservations, and submit reviews**.  
+- Administrators can **manage products, staff, events, bookings, and monitor metrics** through a secure dashboard.  
+
+Built with **PHP, MySQL, HTML/CSS, and JavaScript**, RMS ensures a responsive, interactive, and secure experience while centralizing restaurant management for operational efficiency.
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
 <!-- Features Banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%9A%80%20Features&fontSize=32&width=1200&height=130&color=0:00F260,100:0575E6" width="100%">
 
@@ -145,13 +170,13 @@ Restaurant-Management-System-RMS-/
 <!-- Future Enhancements Banner --> 
 <img src="https://capsule-render.vercel.app/api?type=waving&text=%F0%9F%94%AE%20Future%20Enhancements&fontSize=32&width=1200&height=130&color=0:00F260,100:0575E6" width="100%">
 
-📸 Image uploads for products/events
-👥 Role-based access control (admin, manager, customer)
-✉️ Email notifications (reservations, password resets)
-🛒 Cart / Order processing
-📊 Analytics & reporting
-📱 Mobile responsive design / dedicated frontend
-🏗️ MVC framework (Laravel/Symfony) for better structure
+📸 Image uploads for products/events  
+👥 Role-based access control (admin, manager, customer)  
+✉️ Email notifications (reservations, password resets)  
+🛒 Cart / Order processing    
+📊 Analytics & reporting   
+📱 Mobile responsive design / dedicated frontend   
+🏗️ MVC framework (Laravel/Symfony) for better structure   
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
 
 <!-- Author Banner --> 
@@ -169,3 +194,4 @@ Restaurant-Management-System-RMS-/
 <img src="https://capsule-render.vercel.app/api?type=waving&text=%E2%AD%90%20Support&fontSize=32&width=1200&height=130&color=0:FF416C,100:FF4B2B" width="100%">
 
 If you like this project, consider giving it a ⭐ on GitHub!
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"> 
